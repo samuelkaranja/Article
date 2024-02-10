@@ -1,0 +1,78 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  border-bottom: 1px solid #eff3f4;
+}
+
+.navbar .logo p {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.navbar .nav_links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav_links ul {
+  list-style-type: none;
+}
+
+.navbar .nav_links ul li {
+  display: inline;
+  padding: 0 20px;
+}
+
+.navbar .nav_links ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: orange;
+}
+
+.navbar .nav_links .nav_buttons {
+  margin-left: 20px;
+}
+
+.navbar .nav_links .nav_buttons a:first-child {
+  background: #1a80e6;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 12px;
+}
+
+.navbar .nav_links .nav_buttons a:last-child {
+  background: #e8eef2;
+  color: #000000;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* ......... Media Queries ............*/
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar .nav_links {
+    margin-top: 10px;
+  }
+
+  .navbar .nav_links ul li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .navbar .nav_links .nav_buttons {
+    margin: 20px 0 0;
+  }
+}
