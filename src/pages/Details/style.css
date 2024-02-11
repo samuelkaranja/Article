@@ -1,0 +1,42 @@
+.details {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: left;
+}
+
+.details h1 {
+  color: #0b1117;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.details h4 {
+  font-size: 15px;
+}
+
+.details .details_img {
+  width: 95%;
+}
+
+.details .details_img img {
+  width: 100%;
+  margin: 10px 0;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.details .desc p {
+  line-height: 1.8;
+}
+
+.details .icons ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.details .icons ul li {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
