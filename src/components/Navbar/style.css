@@ -31,7 +31,11 @@
 .navbar .nav_links ul li:hover {
   text-decoration: underline;
   cursor: pointer;
-  color: orange;
+}
+
+.navbar .nav_links ul li a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .navbar .nav_links .nav_buttons {

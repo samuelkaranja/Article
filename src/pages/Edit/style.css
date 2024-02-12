@@ -1,0 +1,10 @@
+.edit {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.edit h2 {
+  font-size: 25px;
+  font-weight: 500;
+}

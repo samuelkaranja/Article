@@ -2,6 +2,7 @@ import "./style.css";
 import { FaComments, FaChartLine, FaThumbsUp, FaTags } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import { Articles } from "../../assets/Articles";
+import { Comments } from "../../components";
 
 const Details = () => {
   const { id } = useParams();
@@ -37,6 +38,7 @@ const Details = () => {
           </li>
         </ul>
       </div>
+      <Comments />
     </div>
   );
 };

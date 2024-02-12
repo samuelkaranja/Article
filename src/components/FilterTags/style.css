@@ -1,0 +1,23 @@
+.filtertags {
+  padding-bottom: 20px;
+}
+
+.filtertags ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+
+.filtertags ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.filtertags ul li a {
+  text-decoration: none;
+  background: #e8eef0;
+  color: #000000;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 15px;
+}

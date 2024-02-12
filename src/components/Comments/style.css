@@ -1,0 +1,61 @@
+.comments {
+  padding-top: 30px;
+}
+
+.comments h3 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.comments .reply {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.comments .reply .profile_img {
+  width: 80px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.comments .reply .profile_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comments .reply .r .user span:first-child {
+  color: #000000;
+  font-weight: 600;
+  padding-right: 15px;
+}
+
+.comments .reply .r .user span:last-child {
+  color: #bed1d7;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.comments .reply .r p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.comments .comment_form {
+  margin-top: 15px;
+}
+
+.comments .comment_form input {
+  width: 100%;
+  height: 6vh;
+  padding: 0 13px;
+  background: #e8eef2;
+  border: none;
+  border-radius: 10px;
+}
+
+.comments .comment_form input:focus {
+  outline: none;
+}

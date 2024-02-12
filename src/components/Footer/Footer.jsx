@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="links">
         <ul>
           <li>
-            <a href="/#">Contact us</a>
+            <Link to="contact-us">Contact us</Link>
           </li>
           <li>
             <a href="/#">About</a>

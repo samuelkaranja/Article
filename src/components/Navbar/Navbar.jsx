@@ -11,9 +11,13 @@ const Navbar = () => {
       <div className="nav_links">
         <ul>
           <li>Featured</li>
-          <li>Explore</li>
+          <li>
+            <Link to="/explore">Explore</Link>
+          </li>
           <li>Community</li>
-          <li>Write</li>
+          <li>
+            <Link to="/edit">Write</Link>
+          </li>
         </ul>
         <div className="nav_buttons">
           <a href="/#">Get started</a>
