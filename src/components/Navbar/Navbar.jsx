@@ -18,6 +18,9 @@ const Navbar = () => {
           <li>
             <Link to="/edit">Write</Link>
           </li>
+          <li>
+            <Link to="/profile">Profile</Link>
+          </li>
         </ul>
         <div className="nav_buttons">
           <a href="/#">Get started</a>

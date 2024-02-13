@@ -1,0 +1,28 @@
+.tabs {
+  padding: 10px 0;
+}
+
+.tabs .tabs_btns {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-bottom: 1px solid #dae5ef;
+}
+
+.tabs .tabs_btns button {
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 auto;
+  color: #8e9599;
+  background: none;
+  padding: 23px 0;
+}
+
+.tabs .tabs_btns button:hover {
+  cursor: pointer;
+}
+
+.tabs .tabs_btns button:active {
+  outline: none;
+}

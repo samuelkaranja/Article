@@ -1,0 +1,33 @@
+.notes {
+  text-align: left;
+}
+
+.notes .thoughts {
+  display: flex;
+  padding: 15px 0;
+}
+
+.notes .thoughts_image {
+  width: 100px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.notes .thoughts_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.notes .thoughts_info span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.notes .thoughts_info p {
+  font-size: 14px;
+  color: #474444;
+  line-height: 1.3;
+  margin: 5px 0 !important;
+}

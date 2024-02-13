@@ -1,0 +1,45 @@
+.addnote button {
+  width: 100%;
+  background: #1a80e6;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.addnote .addnote_form label {
+  display: block;
+  padding-bottom: 12px;
+}
+
+.addnote .addnote_form input {
+  width: 100%;
+  padding: 15px 12px;
+  box-sizing: border-box;
+  border: 1px solid #e3e7f2;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.addnote .addnote_form input:focus {
+  outline: none;
+}
+
+.addnote .addnote_form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e3e7f2;
+  border-radius: 10px;
+}
+
+.addnote .addnote_form textarea:focus {
+  outline: none;
+}
+
+.addnote .addnote_form button {
+  margin-top: 10px;
+  float: right;
+}
