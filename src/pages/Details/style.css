@@ -40,3 +40,10 @@
   padding: 10px 20px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .details {
+    width: 90%;
+    padding: 5px 0;
+  }
+}

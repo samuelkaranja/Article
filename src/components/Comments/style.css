@@ -59,3 +59,13 @@
 .comments .comment_form input:focus {
   outline: none;
 }
+
+@media only screen and (max-width: 768px) {
+  .comments .reply .profile_img {
+    display: none;
+  }
+
+  .comments .comment_form input {
+    width: 90%;
+  }
+}

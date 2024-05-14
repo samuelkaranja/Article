@@ -7,3 +7,9 @@
   text-align: left;
   padding-bottom: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  .more {
+    width: 90%;
+  }
+}

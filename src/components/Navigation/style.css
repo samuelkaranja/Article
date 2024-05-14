@@ -2,65 +2,54 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 1rem;
   border-bottom: 1px solid #eff3f4;
   height: 60px;
 }
 
-.navbar .logo a {
-  text-decoration: none;
-  color: #000000;
+.nav-logo {
   font-size: 28px;
   font-weight: 800;
   font-style: italic;
+  color: #000000;
+  font-size: 1.5rem;
   text-decoration: underline;
 }
 
-.navbar .nav_links {
+.nav-menu {
   display: flex;
-  align-items: center;
   gap: 1rem;
   transition: max-height 0.3s ease;
 }
 
-.navbar .nav_links ul {
-  list-style-type: none;
-}
-
-.navbar .nav_links ul li {
-  display: inline;
-  padding: 0 20px;
+.nav-item {
+  color: #000000;
+  text-decoration: none;
+  padding: 0.7rem;
   transition: background 0.3s ease;
 }
 
-.navbar .nav_links ul li:hover {
+.nav-item:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 
-.navbar .nav_links ul li a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.navbar .nav_links .nav_buttons {
+.nav_buttons {
+  margin-top: 15px;
   margin-left: 20px;
+  align-items: center;
 }
 
-.navbar .nav_links .nav_buttons a:first-child {
+.signup {
   background: #1a80e6;
   color: #ffffff;
-  padding: 10px;
   border-radius: 10px;
   text-decoration: none;
   font-size: 15px;
-  margin-right: 12px;
 }
 
-.navbar .nav_links .nav_buttons a:last-child {
+.login {
   background: #e8eef2;
   color: #000000;
-  padding: 10px;
   border-radius: 10px;
   text-decoration: none;
   font-size: 15px;
@@ -72,34 +61,33 @@
   cursor: pointer;
 }
 
-/* ......... Media Queries ............*/
-
 @media only screen and (max-width: 768px) {
-  /* .navbar {
-    flex-direction: column;
-    padding: 20px;
-  } */
+  .navbar {
+    position: relative;
+    z-index: 1000;
+  }
 
-  .navbar .nav_links {
-    /* margin-top: 10px; */
+  .nav-menu {
     flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
-    background: #333;
     max-height: 0;
     overflow: hidden;
-    z-index: 1000;
   }
 
-  .navbar .nav_links ul li {
-    display: block;
-    padding: 10px 0;
+  .nav-menu.open {
+    max-height: 450px;
   }
 
-  .navbar .nav_links .nav_buttons {
-    margin: 20px 0 0;
+  .nav-item {
+    padding: 1rem 2rem;
+    text-decoration: underline;
+  }
+
+  .nav_buttons {
+    margin: 0;
   }
 
   .hamburger {

@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="navbar">
       <div className="logo">
-        <Link to="/">Wise Words</Link>
+        <Link to="/">Penned</Link>
       </div>
-      <div className="nav_links">
+      <div className={`nav_links ${isOpen ? "open" : ""}`}>
         <ul>
           <li>Featured</li>
           <li>
@@ -26,6 +33,9 @@ const Navbar = () => {
           <a href="/#">Get started</a>
           <a href="/#">Sign in</a>
         </div>
+      </div>
+      <div className="hamburger" onClick={toggleMenu}>
+        {isOpen ? <FaTimes /> : <FaBars />}
       </div>
     </div>
   );

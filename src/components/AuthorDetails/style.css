@@ -51,3 +51,16 @@
   background: #1a80e6;
   color: #ffffff;
 }
+
+@media only screen and (max-width: 768px) {
+  .authordetails {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .authordetails .author {
+    padding-bottom: 40px;
+  }
+}

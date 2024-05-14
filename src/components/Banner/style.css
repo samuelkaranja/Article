@@ -45,3 +45,18 @@
   padding: 15px;
   border-radius: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .banner::before {
+    border-radius: 0;
+  }
+
+  .banner .info {
+    top: 25%;
+  }
+}

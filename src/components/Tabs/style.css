@@ -25,4 +25,5 @@
 
 .tabs .tabs_btns button:active {
   outline: none;
+  color: green;
 }

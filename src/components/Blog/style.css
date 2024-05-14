@@ -65,3 +65,14 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .blog .article {
+    display: block;
+    padding: 15px;
+  }
+
+  .blog .article .article_img {
+    width: 100%;
+  }
+}
