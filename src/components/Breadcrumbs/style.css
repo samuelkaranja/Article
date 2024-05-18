@@ -1,0 +1,17 @@
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  width: 68%;
+  margin: 0 auto;
+  padding-top: 12px;
+}
+
+.breadcrumb-item {
+  margin-right: 0.5rem;
+}
+
+.breadcrumb-item + .breadcrumb-item:before {
+  content: ">";
+  margin-right: 0.5rem;
+  font-size: 13px;
+}

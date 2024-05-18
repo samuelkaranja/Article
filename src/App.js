@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Navbar, Footer } from "./components";
+import { Navbar, Breadcrumbs, Footer } from "./components";
 import { Contact, Details, Edit, Explore, Home, Profile } from "./pages/";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
+        <Breadcrumbs />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/details/:id" element={<Details />} />

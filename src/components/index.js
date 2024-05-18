@@ -1,4 +1,5 @@
 export { default as Navbar } from "./Navigation/Navbar.jsx";
+export { default as Breadcrumbs } from "./Breadcrumbs/Breadcrumbs.jsx";
 export { default as Banner } from "./Banner/Banner.jsx";
 export { default as Blog } from "./Blog/Blog.jsx";
 export { default as Comments } from "./Comments/Comments.jsx";

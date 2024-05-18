@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./style.css";
 import { FaComments, FaChartLine, FaThumbsUp, FaTags } from "react-icons/fa";
 import { useParams } from "react-router-dom";
@@ -5,6 +6,11 @@ import { Articles } from "../../assets/Articles";
 import { Comments } from "../../components";
 
 const Details = () => {
+  // Makes sure the content starts at the top of the page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { id } = useParams();
   const article = Articles.find((info) => info.id === parseInt(id));
 
