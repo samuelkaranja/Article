@@ -24,6 +24,7 @@ const Login = ({ setIsAuth }) => {
             <img
               className="google-icon"
               src="https://i.ibb.co/ydLySMx/google.png"
+              alt="google-logo"
             />
           </div>
           <p className="btn-text">Sign In With Google</p>
