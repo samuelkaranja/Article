@@ -30,8 +30,8 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="nav_buttons">
-          <a href="/#">Get started</a>
-          <a href="/#">Sign in</a>
+          <Link to="/register">Get started</Link>
+          <Link to="/login">Sign in</Link>
         </div>
       </div>
       <div className="hamburger" onClick={toggleMenu}>

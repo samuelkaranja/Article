@@ -1,13 +1,34 @@
+import { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar, Breadcrumbs, Footer } from "./components";
-import { Contact, Details, Edit, Explore, Home, Profile } from "./pages/";
+import {
+  Contact,
+  Details,
+  Edit,
+  Explore,
+  Home,
+  Profile,
+  Login,
+} from "./pages/";
+import { signOut } from "firebase/auth";
+import { auth } from "./firebase";
 
 function App() {
+  const [isAuth, setIsAuth] = useState(false);
+
+  const signUserOut = () => {
+    signOut(auth).then(() => {
+      localStorage.clear();
+      setIsAuth(false);
+      window.location.pathname = "/login";
+    });
+  };
+
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar isAuth={isAuth} signUserOut={signUserOut} />
         <Breadcrumbs />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -16,6 +37,7 @@ function App() {
           <Route path="/edit" element={<Edit />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
         </Routes>
         <Footer />
       </Router>
