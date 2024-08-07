@@ -1,0 +1,44 @@
+.editform {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.editform form {
+  width: 100%;
+}
+
+.editform label {
+  display: block;
+  text-align: left;
+  padding-bottom: 6px;
+}
+
+.editform input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.editform input:focus {
+  box-shadow: 1px solid green;
+}
+
+.editform textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+.editform button {
+  display: block;
+  width: 25%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: green;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}

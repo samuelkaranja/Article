@@ -4,7 +4,7 @@ import "./style.css";
 const Edit = () => {
   return (
     <div className="edit">
-      <h2>Edit a new article</h2>
+      <h2>Create A Post</h2>
       <EditForm />
     </div>
   );

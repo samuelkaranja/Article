@@ -31,7 +31,7 @@ function App() {
         <Navbar isAuth={isAuth} signUserOut={signUserOut} />
         <Breadcrumbs />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} isAuth={isAuth} />
           <Route path="/details/:id" element={<Details />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/edit" element={<Edit />} />
