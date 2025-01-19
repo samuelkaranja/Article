@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import { Navbar, Breadcrumbs, Footer } from "./components";
 import {
   Contact,
@@ -38,6 +43,9 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
+
+          {/* Redirecting routes that don't exist */}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </Router>
